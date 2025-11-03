@@ -1,103 +1,103 @@
-# Qt Design Studio Usage Guide
+# Qt Design Studio 使用指南
 
-## Introduction
+## 簡介
 
-Qt Design Studio is a powerful UI design and development tool that bridges the gap between designers and developers. It enables teams to create sophisticated, animated user interfaces for Qt applications without extensive coding knowledge. The tool supports both Qt Quick (QML) and Qt Widgets, making it versatile for various project types.
+Qt Design Studio 是一個強大的 UI 設計和開發工具，它架起了設計師和開發者之間的橋樑。它使團隊能夠為 Qt 應用程式創建複雜的動畫使用者介面，而無需豐富的編碼知識。該工具支援 Qt Quick (QML) 和 Qt Widgets，使其適用於各種專案類型。
 
-## Getting Started
+## 入門
 
-### Installation and Setup
+### 安裝和設定
 
-Qt Design Studio is included in the Qt framework distribution. After installation, launch the application and select "New Project" from the welcome screen. Choose from available templates including mobile applications, desktop interfaces, or embedded systems UIs. The tool automatically generates the necessary project structure with properly organized QML files, resource folders, and configuration files.
+Qt Design Studio 包含在 Qt 框架發行版中。安裝後，啟動應用程式並從歡迎畫面選擇「新專案」。從可用的範本中選擇，包括行動應用程式、桌面介面或嵌入式系統 UI。該工具會自動生成必要的專案結構，包含組織良好的 QML 檔案、資源資料夾和配置檔案。
 
-### Workspace Overview
+### 工作區概覽
 
-The workspace consists of several key panels:
-- **Navigator**: Shows the hierarchical structure of your UI components
-- **Form Editor**: Visual canvas for designing interfaces
-- **Library**: Contains reusable components and assets
-- **Properties**: Displays and modifies component properties
-- **Timeline**: Creates animations and transitions
-- **Text Editor**: Direct QML code editing when needed
+工作區由幾個關鍵面板組成：
+- **導航器**：顯示 UI 元件的階層結構
+- **表單編輯器**：用於設計介面的視覺化畫布
+- **程式庫**：包含可重複使用的元件和資源
+- **屬性**：顯示和修改元件屬性
+- **時間軸**：創建動畫和過渡效果
+- **文字編輯器**：在需要時直接編輯 QML 程式碼
 
-## Core Components and Workflow
+## 核心元件和工作流程
 
-### Component Library
+### 元件程式庫
 
-Qt Design Studio provides an extensive library of pre-built components:
+Qt Design Studio 提供了豐富的預建元件程式庫：
 
-**Basic Controls**: Buttons, text fields, sliders, checkboxes, radio buttons, and combo boxes form the foundation of interactive interfaces. Each component is customizable through the properties panel.
+**基本控制項**：按鈕、文字欄位、滑桿、核取方塊、選項按鈕和下拉選單構成了互動介面的基礎。每個元件都可以通過屬性面板進行自訂。
 
-**Containers**: Rectangle, Item, and layout containers organize content. Grid, Row, and Column layouts automatically arrange child elements, while StackLayout enables view switching.
+**容器**：矩形、項目和佈局容器組織內容。網格、行和列佈局自動排列子元素，而 StackLayout 則支援視圖切換。
 
-**Visual Elements**: Images, icons, SVG graphics, and shapes add visual appeal. The tool supports various image formats and vector graphics for scalable designs.
+**視覺元素**：圖像、圖示、SVG 圖形和形狀增加了視覺吸引力。該工具支援各種圖像格式和向量圖形以實現可擴展的設計。
 
-**Advanced Components**: List views, table views, scroll views, and custom controls handle complex data presentation and user interactions.
+**進階元件**：列表視圖、表格視圖、捲動視圖和自訂控制項處理複雜的資料展示和使用者互動。
 
-### Design Process
+### 設計流程
 
-Begin by dragging components from the Library onto the Form Editor canvas. Use the alignment tools and guidelines to position elements precisely. The properties panel allows customization of colors, fonts, sizes, margins, and padding. Apply responsive design principles using anchors and layouts that adapt to different screen sizes.
+首先從程式庫將元件拖曳到表單編輯器畫布上。使用對齊工具和輔助線精確定位元素。屬性面板允許自訂顏色、字型、大小、邊距和內距。使用錨點和佈局應用響應式設計原則，以適應不同的螢幕尺寸。
 
-### States and Transitions
+### 狀態和過渡
 
-States represent different UI configurations. Create states for various application conditions like logged-in/logged-out, light/dark themes, or different screen orientations. Define transitions between states with smooth animations including opacity changes, position movements, rotation, and scaling effects. The Timeline panel provides precise control over animation duration and easing curves.
+狀態代表不同的 UI 配置。為各種應用程式條件創建狀態，如登入/登出、明亮/暗黑主題或不同的螢幕方向。使用平滑的動畫定義狀態之間的過渡，包括不透明度變化、位置移動、旋轉和縮放效果。時間軸面板提供對動畫持續時間和緩動曲線的精確控制。
 
-### Data Binding
+### 資料綁定
 
-Connect UI components to backend data models using Qt's property binding system. This enables dynamic content updates without manual intervention. Signal-slot connections handle user interactions, triggering specific functions when buttons are clicked, text changes, or selections are made.
+使用 Qt 的屬性綁定系統將 UI 元件連接到後端資料模型。這使得動態內容更新無需手動干預。信號-槽連接處理使用者互動，在按鈕被點擊、文字變更或做出選擇時觸發特定功能。
 
-## Working with Assets
+## 使用資源
 
-### Importing Design Assets
+### 匯入設計資源
 
-Import designs from Figma, Sketch, or Adobe XD using the bridge plugins. Qt Design Studio converts design layers into QML components, maintaining structure and styling. Images, icons, and fonts are automatically added to the resource system.
+使用橋接外掛從 Figma、Sketch 或 Adobe XD 匯入設計。Qt Design Studio 將設計圖層轉換為 QML 元件，保持結構和樣式。圖像、圖示和字型會自動添加到資源系統中。
 
-### Resource Management
+### 資源管理
 
-Organize assets in the Assets panel. Create resource collections for different themes or device resolutions. Use Qt's resource system to embed files directly into the application, ensuring deployment simplicity. Apply naming conventions and folder structures for maintainable projects.
+在資源面板中組織資源。為不同主題或裝置解析度創建資源集合。使用 Qt 的資源系統將檔案直接嵌入應用程式中，確保部署簡便性。應用命名規範和資料夾結構以維護專案。
 
-## Advanced Features
+## 進階功能
 
-### Custom Components
+### 自訂元件
 
-Create reusable custom components by combining basic elements. Define component properties, signals, and behaviors. Export components to the library for use across multiple projects. This promotes consistency and accelerates development.
+通過組合基本元素創建可重複使用的自訂元件。定義元件屬性、信號和行為。將元件匯出到程式庫以在多個專案中使用。這促進了一致性並加速了開發。
 
-### 3D Integration
+### 3D 整合
 
-Qt Design Studio supports 3D content through Qt Quick 3D. Import 3D models, add lights and cameras, and integrate 3D scenes with 2D UI elements. This capability is particularly valuable for automotive dashboards, medical devices, and industrial control panels.
+Qt Design Studio 通過 Qt Quick 3D 支援 3D 內容。匯入 3D 模型、添加燈光和攝影機，並將 3D 場景與 2D UI 元素整合。此功能對於汽車儀表板、醫療裝置和工業控制面板特別有價值。
 
-### Live Preview
+### 即時預覽
 
-Test designs instantly using the live preview feature. Preview on desktop or deploy to connected devices for real-world testing. The preview automatically updates as you modify designs, providing immediate feedback on changes.
+使用即時預覽功能立即測試設計。在桌面上預覽或部署到連接的裝置進行實際測試。預覽會在您修改設計時自動更新，提供即時回饋。
 
-## Collaboration and Integration
+## 協作和整合
 
-### Designer-Developer Workflow
+### 設計師-開發者工作流程
 
-Designers work in Qt Design Studio's visual environment while developers extend functionality with JavaScript and C++. The generated QML code is clean and maintainable, facilitating easy customization. Version control integration tracks changes and enables team collaboration.
+設計師在 Qt Design Studio 的視覺化環境中工作，而開發者使用 JavaScript 和 C++ 擴展功能。生成的 QML 程式碼乾淨且易於維護，便於輕鬆自訂。版本控制整合追蹤變更並支援團隊協作。
 
-### Code Generation
+### 程式碼生成
 
-Qt Design Studio generates production-ready QML code. The code structure follows Qt best practices with proper component hierarchy, efficient property bindings, and optimized resource usage. Developers can extend generated code without breaking the design workflow.
+Qt Design Studio 生成可用於生產環境的 QML 程式碼。程式碼結構遵循 Qt 最佳實踐，具有適當的元件階層、高效的屬性綁定和優化的資源使用。開發者可以擴展生成的程式碼而不破壞設計工作流程。
 
-## Best Practices
+## 最佳實踐
 
-**Performance Optimization**: Minimize component count, use image caching, implement lazy loading for complex views, and profile applications using Qt's performance tools.
+**效能優化**：最小化元件數量，使用圖像快取，對複雜視圖實現延遲載入，並使用 Qt 的效能工具進行效能分析。
 
-**Responsive Design**: Design for multiple screen sizes using scalable layouts, relative positioning with anchors, and density-independent units. Test on various devices and orientations.
+**響應式設計**：使用可擴展的佈局、錨點的相對定位和密度無關單位設計多種螢幕尺寸。在各種裝置和方向上進行測試。
 
-**Maintainability**: Organize components logically, use descriptive naming conventions, document complex interactions, and separate concerns between UI and business logic.
+**可維護性**：邏輯性地組織元件，使用描述性命名規範，記錄複雜的互動，並分離 UI 和業務邏輯之間的關注點。
 
-**Accessibility**: Include proper labels, ensure sufficient color contrast, support keyboard navigation, and test with screen readers.
+**無障礙性**：包含適當的標籤，確保足夠的顏色對比度，支援鍵盤導航，並使用螢幕閱讀器進行測試。
 
-## Common Use Cases
+## 常見使用案例
 
-**Mobile Applications**: Create modern, touch-friendly interfaces with gesture support, smooth transitions, and platform-appropriate styling for iOS and Android.
+**行動應用程式**：創建現代、觸控友好的介面，具有手勢支援、平滑過渡以及適合 iOS 和 Android 的平台樣式。
 
-**Embedded Systems**: Design efficient interfaces for resource-constrained devices including automotive infotainment systems, industrial HMIs, and medical equipment.
+**嵌入式系統**：為資源受限的裝置設計高效介面，包括汽車資訊娛樂系統、工業 HMI 和醫療設備。
 
-**Desktop Applications**: Build feature-rich applications with complex layouts, menu systems, toolbars, and multi-window interfaces.
+**桌面應用程式**：構建功能豐富的應用程式，具有複雜的佈局、選單系統、工具列和多視窗介面。
 
-## Conclusion
+## 結論
 
-Qt Design Studio streamlines UI development by combining visual design tools with powerful Qt technology. Its intuitive interface enables rapid prototyping while producing production-quality code. Whether creating simple mobile apps or complex embedded systems, Qt Design Studio provides the tools needed for professional UI development. The seamless integration between design and development phases reduces iteration time, improves collaboration, and ultimately delivers superior user experiences. Master these fundamentals, explore advanced features, and leverage the extensive Qt community resources to maximize your productivity with Qt Design Studio.
+Qt Design Studio 通過將視覺化設計工具與強大的 Qt 技術相結合來簡化 UI 開發。其直觀的介面能夠快速製作原型，同時生成生產品質的程式碼。無論是創建簡單的行動應用程式還是複雜的嵌入式系統，Qt Design Studio 都提供了專業 UI 開發所需的工具。設計和開發階段之間的無縫整合減少了迭代時間，改善了協作，並最終提供卓越的使用者體驗。掌握這些基礎知識，探索進階功能，並利用廣泛的 Qt 社群資源來最大化您使用 Qt Design Studio 的生產力。
